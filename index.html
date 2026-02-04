@@ -284,15 +284,507 @@
         </div>
       </div>
     </section>
+
+    <section class="tab-highlight" aria-labelledby="tab-highlight-heading">
+      <div class="container">
+        <div class="tab-card">
+          <div class="tab-media" aria-hidden="true">
+            <div class="tab-wallpaper tab-wallpaper--light"></div>
+            <div class="tab-wallpaper tab-wallpaper--dark"></div>
+
+            <div class="tab-window">
+              <div class="tab-titlebar">
+                <div class="tab-dots"><span></span><span></span><span></span></div>
+                <div class="tab-title">Cursor</div>
+                <span class="tab-chip">Autocomplete</span>
+              </div>
+
+              <div class="tab-body">
+                <div class="tab-tabs">
+                  <span class="tab-pill">Dashboard.tsx</span>
+                  <span class="tab-pill tab-pill--active">SupportChat.tsx</span>
+                  <span class="tab-pill">Shortcuts.ts</span>
+                </div>
+
+                <div class="tab-suggestion">
+                  <div class="tab-label">Tab</div>
+                  <p>Predicts your next action with striking speed and precision—no prompt crafting required.</p>
+                </div>
+
+                <div class="tab-code tab-code--shiki">
+                  <div class="tab-line tab-line--context">"use client";</div>
+                  <div class="tab-line tab-line--context">import React, { useState } from "react";</div>
+                  <div class="tab-line tab-line--context">import { useQuery } from "@tanstack/react-query";</div>
+                  <div class="tab-line tab-line--context"></div>
+                  <div class="tab-line tab-line--context">export default function SupportChat() {</div>
+                  <div class="tab-line tab-line--context">  const [input, setInput] = useState("");</div>
+                  <div class="tab-line tab-line--context">  const { data: messages } = useQuery({</div>
+                  <div class="tab-line tab-line--context">    queryKey: ['messages'],</div>
+                  <div class="tab-line tab-line--add">    queryFn: () =&gt; fetch('/api/messages').then(res =&gt; res.json())</div>
+                  <div class="tab-line tab-line--context">  });</div>
+                  <div class="tab-line tab-line--context"></div>
+                  <div class="tab-line tab-line--context">  return (</div>
+                  <div class="tab-line tab-line--rem">-   &lt;div className="flex flex-col h-full"&gt;</div>
+                  <div class="tab-line tab-line--add">+   &lt;div className="flex flex-col h-full rounded border"&gt;</div>
+                  <div class="tab-line tab-line--context">      &lt;div className="p-3 border-b"&gt;</div>
+                  <div class="tab-line tab-line--add">        &lt;h3 className="font-semibold"&gt;Support Chat&lt;/h3&gt;</div>
+                  <div class="tab-line tab-line--context">      &lt;/div&gt;</div>
+                  <div class="tab-line tab-line--context">      &lt;div className="flex-1 overflow-auto p-3"&gt;</div>
+                  <div class="tab-line tab-line--add">        {messages.map((message) =&gt; (</div>
+                  <div class="tab-line tab-line--context">          &lt;div key={message.id} className="mb-4"&gt;</div>
+                  <div class="tab-line tab-line--context">            {message.content}</div>
+                  <div class="tab-line tab-line--context">          &lt;/div&gt;</div>
+                  <div class="tab-line tab-line--add">        ))}</div>
+                  <div class="tab-line tab-line--context">      &lt;/div&gt;</div>
+                  <div class="tab-line tab-line--context">      &lt;div className="p-3"&gt;</div>
+                  <div class="tab-line tab-line--context">        &lt;input</div>
+                  <div class="tab-line tab-line--context">          type="text"</div>
+                  <div class="tab-line tab-line--context">          value={input}</div>
+                  <div class="tab-line tab-line--context">          onChange={(e) =&gt; setInput(e.target.value)}</div>
+                  <div class="tab-line tab-line--context">          placeholder="Ask about your order..."</div>
+                  <div class="tab-line tab-line--add">          className="w-full p-2 border rounded bg-surface"</div>
+                  <div class="tab-line tab-line--context">        /&gt;</div>
+                  <div class="tab-line tab-line--context">      &lt;/div&gt;</div>
+                  <div class="tab-line tab-line--context">    &lt;/div&gt;</div>
+                  <div class="tab-line tab-line--context">  );</div>
+                  <div class="tab-line tab-line--context">}</div>
+                </div>
+
+                <div class="tab-footer">
+                  <div class="tab-footer-meta">Tab · GPT-5.2</div>
+                  <div class="tab-footer-hint">Completing keyboard shortcuts...</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-copy">
+            <p class="feature-tag">Tab</p>
+            <h2 id="tab-highlight-heading">Magically accurate autocomplete</h2>
+            <p class="feature-subhead">Our custom Tab model predicts your next action with striking speed and precision.</p>
+            <a class="btn btn--ghost btn--sm" href="/features#tab">Learn about Tab →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials" aria-labelledby="testimonials-heading">
+      <div class="container">
+        <div class="testimonials__intro">
+          <h2 id="testimonials-heading">The new way to build software.</h2>
+        </div>
+
+        <div class="testimonial-grid">
+          <figure class="testimonial-card">
+            <blockquote>
+              <p>It was night and day from one batch to another, adoption went from single digits to over 80%. It just spread like wildfire, all the best builders were using Cursor.</p>
+            </blockquote>
+            <figcaption>
+              <div class="avatar"><img src="https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/avatars/diana-hu-avatar.png" alt=""></div>
+              <div class="testimonial-meta">Diana Hu<span class="testimonial-role">General Partner, Y Combinator</span></div>
+            </figcaption>
+          </figure>
+
+          <figure class="testimonial-card">
+            <blockquote>
+              <p>The most useful AI tool that I currently pay for, hands down, is Cursor. It's fast, autocompletes when and where you need it to, handles brackets properly, sensible keyboard shortcuts, bring-your-own-model... everything is well put together.</p>
+            </blockquote>
+            <figcaption>
+              <div class="avatar"><img src="https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/avatars/shadcn-avatar.png" alt=""></div>
+              <div class="testimonial-meta">shadcn<span class="testimonial-role">Creator of shadcn/ui</span></div>
+            </figcaption>
+          </figure>
+
+          <figure class="testimonial-card">
+            <blockquote>
+              <p>The best LLM applications have an autonomy slider: you control how much independence to give the AI. In Cursor, you can do Tab completion, Cmd+K for targeted edits, or you can let it rip with the full autonomy agentic version.</p>
+            </blockquote>
+            <figcaption>
+              <div class="avatar"><img src="https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/avatars/andrej-karpathy-avatar.png" alt=""></div>
+              <div class="testimonial-meta">Andrej Karpathy<span class="testimonial-role">CEO, Eureka Labs</span></div>
+            </figcaption>
+          </figure>
+
+          <figure class="testimonial-card">
+            <blockquote>
+              <p>Cursor quickly grew from hundreds to thousands of extremely enthusiastic Stripe employees. We spend more on R&amp;D and software creation than any other undertaking, and there's significant economic outcomes when making that process more efficient and productive.</p>
+            </blockquote>
+            <figcaption>
+              <div class="avatar"><img src="https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/avatars/patrick-collison-avatar.png" alt=""></div>
+              <div class="testimonial-meta">Patrick Collison<span class="testimonial-role">Co-Founder &amp; CEO, Stripe</span></div>
+            </figcaption>
+          </figure>
+
+          <figure class="testimonial-card">
+            <blockquote>
+              <p>It's official.
+
+I hate vibe coding.
+I love Cursor tab coding.
+
+It's wild.</p>
+            </blockquote>
+            <figcaption>
+              <div class="avatar"><img src="https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/avatars/theprimeagen-avatar.png" alt=""></div>
+              <div class="testimonial-meta">ThePrimeagen<span class="testimonial-role">@ThePrimeagen</span></div>
+            </figcaption>
+          </figure>
+
+          <figure class="testimonial-card">
+            <blockquote>
+              <p>It's definitely becoming more fun to be a programmer. It's less about digging through pages and more about what you want to happen. We are at the 1% of what's possible, and it's in interactive experiences like Cursor where models like GPT-5 shine brightest.</p>
+            </blockquote>
+            <figcaption>
+              <div class="avatar"><img src="https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/avatars/greg-brockman-avatar.jpg" alt=""></div>
+              <div class="testimonial-meta">Greg Brockman<span class="testimonial-role">President, OpenAI</span></div>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="frontier" aria-labelledby="frontier-heading">
+      <div class="container">
+        <div class="frontier__intro">
+          <h2 id="frontier-heading">Stay on the frontier</h2>
+        </div>
+
+        <div class="frontier-grid">
+          <a class="frontier-card" href="https://cursor.com/docs/models" target="_blank" rel="noopener noreferrer">
+            <div class="frontier-card__copy">
+              <div>
+                <h3>Access the best models</h3>
+                <p class="frontier-subhead">Choose between every cutting-edge model from OpenAI, Anthropic, Gemini, and xAI.</p>
+              </div>
+              <span class="btn btn--ghost btn--sm frontier-cta">Explore models ↗</span>
+            </div>
+            <figure class="frontier-media" aria-hidden="true">
+              <img src="https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/misc/asset-e6375f83012e4a76ff15.png" alt="Model picker light theme">
+              <img class="frontier-media--dark" src="https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/misc/asset-0f82efbbc1a26deeca19.png" alt="Model picker dark theme">
+            </figure>
+          </a>
+
+          <a class="frontier-card" href="https://cursor.com/docs/features/semantic-search" target="_blank" rel="noopener noreferrer">
+            <div class="frontier-card__copy">
+              <div>
+                <h3>Complete codebase understanding</h3>
+                <p class="frontier-subhead">Cursor learns how your codebase works, no matter the scale or complexity.</p>
+              </div>
+              <span class="btn btn--ghost btn--sm frontier-cta">Learn about semantic search ↗</span>
+            </div>
+            <figure class="frontier-media" aria-hidden="true">
+              <img src="https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/misc/asset-fd9b3b4cd7d670f9f7d8.png" alt="Semantic search light UI">
+              <img class="frontier-media--dark" src="https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/misc/asset-3cb319c263fd5a76115b.png" alt="Semantic search dark UI">
+            </figure>
+          </a>
+
+          <a class="frontier-card" href="/enterprise">
+            <div class="frontier-card__copy">
+              <div>
+                <h3>Develop enduring software</h3>
+                <p class="frontier-subhead">Trusted by over half of the Fortune 500 to accelerate development, securely and at scale.</p>
+              </div>
+              <span class="btn btn--ghost btn--sm frontier-cta">Explore enterprise →</span>
+            </div>
+            <figure class="frontier-media" aria-hidden="true">
+              <img src="https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/homepage/homepage-team-photo-1.jpg" alt="Cursor team photo">
+            </figure>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="changelog" aria-labelledby="changelog-heading">
+      <div class="container">
+        <div class="changelog__intro">
+          <h2 id="changelog-heading">Changelog</h2>
+        </div>
+
+        <div class="changelog-grid">
+          <article class="changelog-card">
+            <a href="/changelog/2-4">
+              <div class="changelog-card__meta">
+                <span class="changelog-label">2.4</span>
+                <time datetime="2026-01-22">Jan 22, 2026</time>
+              </div>
+              <p class="changelog-card__title">Subagents, Skills, and Image Generation</p>
+            </a>
+          </article>
+
+          <article class="changelog-card">
+            <a href="/changelog/cli-jan-16-2026">
+              <div class="changelog-card__meta">
+                <time datetime="2026-01-16">Jan 16, 2026</time>
+              </div>
+              <p class="changelog-card__title">CLI Agent Modes and Cloud Handoff</p>
+            </a>
+          </article>
+
+          <article class="changelog-card">
+            <a href="/changelog/cli-jan-08-2026">
+              <div class="changelog-card__meta">
+                <time datetime="2026-01-08">Jan 8, 2026</time>
+              </div>
+              <p class="changelog-card__title">New CLI Features and Improved CLI Performance</p>
+            </a>
+          </article>
+
+          <article class="changelog-card">
+            <a href="/changelog/2-3">
+              <div class="changelog-card__meta">
+                <span class="changelog-label">2.3</span>
+                <time datetime="2025-12-22">Dec 22, 2025</time>
+              </div>
+              <p class="changelog-card__title">Layout Customization and Stability Improvements</p>
+            </a>
+          </article>
+        </div>
+
+        <a class="btn-text" href="/changelog">See what's new in Cursor →</a>
+      </div>
+    </section>
+
+    <section class="careers" aria-labelledby="careers-heading">
+      <div class="container careers-grid">
+        <div class="careers__copy">
+          <h2 id="careers-heading">Cursor is an applied team focused on building the future of coding.</h2>
+          <a class="btn btn--primary" href="/careers">Join us <span aria-hidden="true">→</span></a>
+        </div>
+
+        <div class="careers-media" aria-hidden="true">
+          <a class="careers-media__link" href="/careers">
+            <img src="https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/homepage/homepage-team-photo.jpg" alt="Cursor team" loading="lazy">
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="recent" aria-labelledby="recent-heading">
+      <div class="container recent-grid">
+        <div class="recent__label">
+          <h2 id="recent-heading">Recent highlights</h2>
+        </div>
+
+        <div class="recent-list">
+          <article class="recent-card">
+            <a class="recent-card__link" href="/blog/2-0">
+              <div class="recent-card__body">
+                <p class="recent-card__title">Introducing Cursor 2.0 and Composer</p>
+                <p class="recent-card__subhead">A new interface and our first coding model, both purpose-built for working with agents.</p>
+              </div>
+              <div class="recent-card__meta"><span>Product · </span><time datetime="2025-10-29">Oct 29, 2025</time></div>
+            </a>
+          </article>
+
+          <article class="recent-card">
+            <a class="recent-card__link" href="/blog/tab-rl">
+              <div class="recent-card__body">
+                <p class="recent-card__title">Improving Cursor Tab with online RL</p>
+                <p class="recent-card__subhead">Our new Tab model makes 21% fewer suggestions while having 28% higher accept rate.</p>
+              </div>
+              <div class="recent-card__meta"><span>Research · </span><time datetime="2025-09-12">Sep 12, 2025</time></div>
+            </a>
+          </article>
+
+          <article class="recent-card">
+            <a class="recent-card__link" href="/blog/kernels">
+              <div class="recent-card__body">
+                <p class="recent-card__title">1.5x faster MoE training with custom MXFP8 kernels</p>
+                <p class="recent-card__subhead">Achieving a 3.5x MoE layer speedup with a complete rebuild for Blackwell GPUs.</p>
+              </div>
+              <div class="recent-card__meta"><span>Research · </span><time datetime="2025-08-29">Aug 29, 2025</time></div>
+            </a>
+          </article>
+
+          <a class="btn-text recent-more" href="/blog">View more posts →</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="feature-deck" aria-label="Cursor highlights">
+      <div class="container feature-grid">
+        <a class="feature-card" href="/features#agent">
+          <div class="feature-card__copy">
+            <p class="feature-tag">Agent</p>
+            <h3>Agent turns ideas into code</h3>
+            <p class="feature-subhead">A human-AI programmer, orders of magnitude more effective than any developer alone.</p>
+            <span class="btn btn--ghost btn--sm">Learn about Agent →</span>
+          </div>
+          <div class="feature-card__media" style="background-image: url('https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/misc/asset-d3c8107d95ae7f6604ad.jpg');" aria-hidden="true"></div>
+        </a>
+
+        <a class="feature-card feature-card--alt" href="/features#tab">
+          <div class="feature-card__copy">
+            <p class="feature-tag">Tab</p>
+            <h3>Magically accurate autocomplete</h3>
+            <p class="feature-subhead">Our custom Tab model predicts your next action with striking speed and precision.</p>
+            <span class="btn btn--ghost btn--sm">Learn about Tab →</span>
+          </div>
+          <div class="feature-card__media" style="background-image: url('https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/misc/asset-fd9b3b4cd7d670f9f7d8.png');" aria-hidden="true"></div>
+        </a>
+
+        <a class="feature-card" href="/features#ecosystem">
+          <div class="feature-card__copy">
+            <p class="feature-tag">Ecosystem</p>
+            <h3>Everywhere software gets built</h3>
+            <p class="feature-subhead">Cursor is in GitHub reviewing your PRs, a teammate in Slack, and anywhere else you work.</p>
+            <span class="btn btn--ghost btn--sm">Learn about Cursor's ecosystem →</span>
+          </div>
+          <div class="feature-card__media" style="background-image: url('https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/misc/asset-85923e7fafe00c9c0d1f.jpg');" aria-hidden="true"></div>
+        </a>
+      </div>
+    </section>
+
+    <section class="ecosystem" aria-labelledby="ecosystem-heading">
+      <div class="container ecosystem-grid">
+        <div class="ecosystem-copy">
+          <p class="feature-tag">Ecosystem</p>
+          <h2 id="ecosystem-heading">Everywhere software gets built</h2>
+          <p class="feature-subhead">Cursor is in GitHub reviewing your PRs, a teammate in Slack, and anywhere else you work.</p>
+          <a class="btn btn--ghost btn--sm" href="/features#ecosystem">Learn about Cursor's ecosystem →</a>
+        </div>
+
+        <div class="ecosystem-media" aria-hidden="true">
+          <div class="eco-wallpaper"></div>
+
+          <div class="eco-card eco-card--slack">
+            <div class="eco-titlebar"><span>Slack · #ask-cursor</span><span class="eco-dots"><span></span><span></span><span></span></span></div>
+            <div class="eco-body">
+              <div class="eco-thread">
+                <p class="eco-author">dylan</p>
+                <p class="eco-text">small thing but would be really good to have anchor links on the website for releases</p>
+              </div>
+              <div class="eco-thread">
+                <p class="eco-author">eric</p>
+                <p class="eco-text">checks out — can you take a stab?</p>
+              </div>
+              <div class="eco-thread eco-thread--reply">
+                <p class="eco-author">Cursor · APP</p>
+                <p class="eco-text">Implemented direct linking for changelog entries and updated Node.js constraints.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="eco-card eco-card--github">
+            <div class="eco-titlebar"><span>GitHub Pull Request</span><span class="eco-dots"><span></span><span></span><span></span></span></div>
+            <div class="eco-body eco-body--code">
+              <div class="eco-file">src/vs/workbench/.../ComposerUnifiedDropdown.tsx</div>
+              <div class="eco-diff">
+                <div class="eco-line eco-line--rem">- {selectedMode().keybinding}</div>
+                <div class="eco-line eco-line--add">+ {composerOpenModeToggleKeybinding}</div>
+              </div>
+              <div class="eco-note">
+                <p class="eco-author">cursor · bot</p>
+                <p class="eco-text">Bug: function returns object instead of string. Call the helper to show the keybinding.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta" aria-labelledby="cta-heading">
+      <div class="container cta-shell">
+        <div class="cta-copy">
+          <h2 id="cta-heading">Try Cursor now.</h2>
+        </div>
+
+        <div class="cta-actions">
+          <a class="btn btn--primary cta-btn cta-btn--desktop" href="https://api2.cursor.sh/updates/download/golden/win32-x64-user/cursor/2.4">
+            <span>Download for Windows</span>
+            <span class="cta-btn__icon" aria-hidden="true">⤓</span>
+          </a>
+
+          <a class="btn btn--ghost cta-btn cta-btn--mobile" href="/agents">
+            <span>Try mobile agent</span>
+            <span class="cta-btn__icon" aria-hidden="true">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer class="footer">
-    <div class="container footer-base">
-      <div>© 2026 Cursor-inspired page. All rights reserved.</div>
-      <div class="footer-base-links">
-        <a href="#top">Privacy</a>
-        <a href="#top">Terms</a>
-        <a href="#top">Status</a>
+    <div class="container footer-top">
+      <nav class="footer-nav" aria-label="Footer">
+        <div class="footer-columns">
+          <div class="footer-col">
+            <h3 class="footer-col__title">Product</h3>
+            <ul class="footer-list">
+              <li><a class="footer-link" href="/features">Features</a></li>
+              <li><a class="footer-link" href="/enterprise">Enterprise</a></li>
+              <li><a class="footer-link" href="/agents">Web Agents</a></li>
+              <li><a class="footer-link" href="/bugbot">Bugbot</a></li>
+              <li><a class="footer-link" href="/cli">CLI</a></li>
+              <li><a class="footer-link" href="/pricing">Pricing</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h3 class="footer-col__title">Resources</h3>
+            <ul class="footer-list">
+              <li><a class="footer-link" href="/download">Download</a></li>
+              <li><a class="footer-link" href="/changelog">Changelog</a></li>
+              <li><a class="footer-link" href="https://cursor.com/docs" target="_blank" rel="noopener noreferrer">Docs <span class="footer-link__icon" aria-hidden="true">↗</span></a></li>
+              <li><a class="footer-link" href="https://cursor.com/learn" target="_blank" rel="noopener noreferrer">Learn <span class="footer-link__icon" aria-hidden="true">↗</span></a></li>
+              <li><a class="footer-link" href="https://forum.cursor.com/" target="_blank" rel="noopener noreferrer">Forum <span class="footer-link__icon" aria-hidden="true">↗</span></a></li>
+              <li><a class="footer-link" href="https://status.cursor.com/" target="_blank" rel="noopener noreferrer">Status <span class="footer-link__icon" aria-hidden="true">↗</span></a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h3 class="footer-col__title">Company</h3>
+            <ul class="footer-list">
+              <li><a class="footer-link" href="/careers">Careers</a></li>
+              <li><a class="footer-link" href="/blog">Blog</a></li>
+              <li><a class="footer-link" href="/community">Community</a></li>
+              <li><a class="footer-link" href="/workshops">Workshops</a></li>
+              <li><a class="footer-link" href="/students">Students</a></li>
+              <li><a class="footer-link" href="/brand">Brand</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h3 class="footer-col__title">Legal</h3>
+            <ul class="footer-list">
+              <li><a class="footer-link" href="/terms-of-service">Terms of Service</a></li>
+              <li><a class="footer-link" href="/privacy">Privacy Policy</a></li>
+              <li><a class="footer-link" href="/data-use">Data Use</a></li>
+              <li><a class="footer-link" href="/security">Security</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h3 class="footer-col__title">Connect</h3>
+            <ul class="footer-list">
+              <li><a class="footer-link" href="https://x.com/cursor_ai" target="_blank" rel="noopener noreferrer">X <span class="footer-link__icon" aria-hidden="true">↗</span></a></li>
+              <li><a class="footer-link" href="https://www.linkedin.com/company/cursorai" target="_blank" rel="noopener noreferrer">LinkedIn <span class="footer-link__icon" aria-hidden="true">↗</span></a></li>
+              <li><a class="footer-link" href="https://www.youtube.com/@cursor_ai" target="_blank" rel="noopener noreferrer">YouTube <span class="footer-link__icon" aria-hidden="true">↗</span></a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <div class="container footer-bottom">
+      <div class="footer-meta">
+        <small>© 2026 Cursor</small>
+        <small class="footer-meta__item">🛡 <a href="/security">SOC 2 Certified</a></small>
+      </div>
+
+      <div class="footer-controls" aria-label="Footer controls">
+        <div class="footer-theme-toggle" role="group" aria-label="Theme selector">
+          <button type="button" aria-label="System theme" class="footer-theme-toggle__btn footer-theme-toggle__btn--active">🖥</button>
+          <button type="button" aria-label="Light theme" class="footer-theme-toggle__btn">☉</button>
+          <button type="button" aria-label="Dark theme" class="footer-theme-toggle__btn">☾</button>
+        </div>
+
+        <div class="footer-language">
+          <button type="button" class="btn btn--secondary btn--sm">
+            <span aria-hidden="true">🌐</span>
+            <span>English</span>
+          </button>
+        </div>
       </div>
     </div>
   </footer>
