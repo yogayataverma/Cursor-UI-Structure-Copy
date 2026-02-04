@@ -2,6 +2,9 @@
 
 A desktop-first static recreation of the Cursor website structure using only HTML and CSS (no JavaScript, no Tailwind). The focus is on matching layout, hierarchy, typography, and color palette.
 
+## Screenshot
+- [Homepage preview](https://github.com/yogayataverma/Cursor-UI-Structure-Copy/blob/master/Image1.png)
+
 ## Included Sections
 - Top navigation bar with logo, links, and CTA
 - Hero with headline, description, CTA buttons, and product mock
